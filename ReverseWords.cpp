@@ -37,5 +37,7 @@ void splitString(std::string& str, std::string& delimiter, std::vector<std::stri
         input.erase(0, tokenPos + split.length());
     }
 
-    result.push_back(input);
+    if(result.size() > 0) {
+        result.push_back(input);
+    }
 }
